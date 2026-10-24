@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an improvement that supports a faithful remaster.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Scope is a faithful remaster of the original game. Requests for new gameplay, story, characters, missions, or other new content are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or limitation
+      description: What existing behavior or compatibility issue would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain how this helps reproduce the original game's behavior or improves compatibility/accessibility without adding new content.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting details
+      description: Include logs, screenshots of the recompilation, or references. Do not attach game files or copyrighted assets.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: This request supports a faithful remaster and does not propose new game content.
+          required: true
+        - label: I have not attached game files, copyrighted assets, executables, or dumps.
+          required: true
