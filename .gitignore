@@ -1,0 +1,8 @@
+# Never commit game files
+*.xbe
+*.iso
+*.xiso
+*.bin
+*.img
+build/
+extracted/
