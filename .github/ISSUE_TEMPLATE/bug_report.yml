@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a reproducible problem with the recompilation.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report only the recompilation project. Never attach game files, ROMs, ISOs, executables, copyrighted assets, or dumps. Logs should be text files with personal paths/tokens removed.
+  - type: input
+    id: version
+    attributes:
+      label: Project version / commit
+      description: Release version or commit SHA.
+      placeholder: e.g. v0.1.0 or abc1234
+    validations:
+      required: true
+  - type: input
+    id: game_region
+    attributes:
+      label: Original game version / region
+      description: Identify the version/region you own; do not upload game media.
+      placeholder: e.g. NTSC-U / PAL
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Launch...\n2. Select...\n3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Relevant settings
+      description: Graphics, audio, controller, resolution, and other relevant options.
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and driver version
+      placeholder: e.g. GPU model, driver version
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpt
+      description: Paste a short text excerpt or attach a plain-text log only. Redact personal paths and secrets. Never attach game files.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked for duplicates and included reproducible steps.
+          required: true
+        - label: I have not attached game files, copyrighted assets, executables, or dumps.
+          required: true
