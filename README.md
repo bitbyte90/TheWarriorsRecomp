@@ -12,6 +12,8 @@ A native PC static recompilation of the **original Xbox version of The Warriors*
 - Upscaled textures and UI.
 - PS5, Xbox and Switch controller support with matching button icons.
 - A launcher that points at your own game image.
+- Full graphics settings menu: render resolution scaling (3x native and beyond), widescreen, anti-aliasing, frame rate options.
+- Texture and asset replacement system: AI-upscaled textures, UI and assets loaded at runtime as optional packs (dump-and-replace, never shipping original files).
 
 ## Legal
 No game files, code or assets from the original game are included in this repo. You must supply your own legally owned copy.
